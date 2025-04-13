@@ -1,17 +1,15 @@
-function multiplo(n) {
-    if (n % 15 == 0) {
-        return 'fizzBuzz';
-    } else if (n % 5 == 0) {
-        return 'Buzz';
-    } else if (n % 3 == 0) {
-        return 'Fizz';
-    } else {
-        return n;
+function multipli(n) {
+    for (let i = 1; i <= n; i++) {
+        if (i % 15 == 0) {
+            console.log('fizzBuzz');
+        } else if (i % 5 == 0) {
+            console.log('Buzz');
+        } else if (i % 3 == 0) {
+            console.log('Fizz');
+        } else {
+            console.log(i);
+        }
     }
 }
 
-console.log(multiplo(6));
-console.log(multiplo(10));
-console.log(multiplo(30));
-console.log(multiplo(4));
-
+multipli(75);
